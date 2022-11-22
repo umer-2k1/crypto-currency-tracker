@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# React Crypto Tracker App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Setup and Run
 
-In the project directory, you can run:
+To get a local copy of the code, clone it using git:
+### git clone https://github.com/SafdarJamal/hacker-news.git
+### cd crypto-currency-tracker
 
 ### `npm start`
 
