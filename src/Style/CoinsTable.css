@@ -1,0 +1,115 @@
+
+    /* background-color: #14161a;
+    color: #EEEE;
+    border-bottom: 1px solid silver; */
+
+.main-container{
+  width: 90vw; 
+  /* border: 2px solid red; */
+  margin: auto;
+  margin-top: 3rem; 
+   font-size: 1.5rem;
+}
+.input-tag input {  
+    background-color: #14161a;
+    color: #fff;
+    margin-top: 2rem;
+    width: 30%;
+    height: 3.5rem;
+    border: 1px solid snow;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+.input-tag input:active {
+    border: 1px solid #DB2B77;
+  }
+ 
+.table-section{
+
+  /* height: 100vh; */
+  /* border: 1px solid blue; */
+  margin-bottom: 3rem;
+
+}
+tr{
+  text-align: justify;
+  /* padding: 3rem 0; */
+
+
+
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+thead th:nth-child(1) {
+  width: 5%;
+}
+thead th {
+  background-color: #181818;
+}
+
+thead th:nth-child(2) {
+  width: 30%;
+}
+
+th{
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray; 
+   height: 5rem;
+}
+td{
+  border-bottom: 1px solid gray;  
+  height: 6rem;
+}
+tbody tr:hover{
+  background-color: #1F1F1F;
+}
+
+  #coin-name{
+    margin: 0 1rem;
+  }
+  .product-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .product-img  h6{
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .product-img  h6:hover{
+    text-decoration: underline;
+  }
+
+  .product-img img{
+      width: 4rem;
+      height: 4rem;
+  }
+
+  .pagination{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+  
+  }
+  .pagination a{
+   
+    padding: 15px;
+  
+  }
+  .page-link {
+
+    cursor: pointer;
+  }
+  
+
+
+  

@@ -1,0 +1,14 @@
+html{
+    font-size: 62.5%;   /* 1rem = 10rem */  
+}
+.heading-txt{
+    
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.info{
+    text-align: center;
+text-transform: capitalize;
+}

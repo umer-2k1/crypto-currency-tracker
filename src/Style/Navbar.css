@@ -1,0 +1,25 @@
+
+nav{
+    width: 100vw;
+    height: 8vh;
+    /* position: static; */
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+ .logo{
+    color: gold;
+    cursor: pointer;
+    font-weight: 400;
+    font-weight: bold;
+    margin-left: 2rem;
+
+}
+select{
+    height: 3.4rem;
+    width: 8rem;
+    background-color: #14161a;
+    color: #fff;
+    border: 2px solid rgb(94, 92, 92);
+}
