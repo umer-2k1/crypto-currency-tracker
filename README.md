@@ -6,7 +6,7 @@ To get a local copy of the code, clone it using git:
 
 
 ```
-git clone https://github.com/SafdarJamal/hacker-news.git
+git clone https://github.com/umermemon4648/crypto-current-tracker.git
 cd crypto-currency-tracker
 ```
 ### `npm start`
