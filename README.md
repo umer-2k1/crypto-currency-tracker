@@ -7,7 +7,7 @@ To get a local copy of the code, clone it using git:
 
 ```
 git clone https://github.com/umermemon4648/crypto-currency-tracker.git
-cd crypto-currency-tracker-master
+cd crypto-currency-tracker
 ```
 ### `npm start`
 
