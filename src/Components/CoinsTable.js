@@ -79,8 +79,8 @@ count++
 return <>
 <tr key={index}>
         {/* <td>{key+1}</td> */}
-        <td >{count}</td>
-<td className='product-img' >
+        <td data-label="#" >{count}</td>
+<td data-label="Coins" className='product-img' >
 <img src={elem.image}  alt="" />
 
 <Link to={`/coins/${elem.id}`}>
@@ -89,14 +89,12 @@ return <>
 </h6>
 </Link>
 
-{/* <h6 style={{color: "#929D82",textTransform: "uppercase"}} > <sup> {elem.symbol}</sup></h6> */}
-
 
 </td>
-        <td >{symbol}{commas(elem.current_price.toFixed(2))}</td>
-        <td style={{color: profit>0 ? "green": "red", fontWeight:'bold'}} > {profit && '+'}{elem.price_change_percentage_24h.toFixed(2)}%	</td>
-        <td>{symbol}{" "}{commas(elem.market_cap.toString().slice(0,-6))}M</td>
-        <td>Chart.js</td>
+        <td data-label="Price"  >{symbol}{commas(elem.current_price.toFixed(2))}</td>
+        <td data-label="24th Change" style={{color: profit>0 ? "green": "red", fontWeight:'bold'}} > {profit && '+'}{elem.price_change_percentage_24h.toFixed(2)}%	</td>
+        <td data-label="Market Cap" >{symbol}{" "}{commas(elem.market_cap.toString().slice(0,-6))}M</td>
+        <td data-label="Chart" >Chart.js</td>
       </tr>
 
 

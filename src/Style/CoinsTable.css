@@ -4,17 +4,16 @@
     border-bottom: 1px solid silver; */
 
 .main-container{
-  width: 90vw; 
-  /* border: 2px solid red; */
+  width: 90vw;
   margin: auto;
-  margin-top: 3rem; 
+  margin-top: 6rem; 
    font-size: 1.5rem;
 }
 .input-tag input {  
     background-color: #14161a;
     color: #fff;
     margin-top: 2rem;
-    width: 30%;
+    width: 50%;
     height: 3.5rem;
     border: 1px solid snow;
     padding-left: 2rem;
@@ -25,9 +24,6 @@
   }
  
 .table-section{
-
-  /* height: 100vh; */
-  /* border: 1px solid blue; */
   margin-bottom: 3rem;
 
 }
@@ -47,13 +43,11 @@ table{
 thead th:nth-child(1) {
   width: 5%;
 }
-thead th {
-  background-color: #181818;
-}
-
 thead th:nth-child(2) {
   width: 30%;
 }
+
+
 
 th{
   border-bottom: 1px solid gray;
@@ -63,6 +57,7 @@ th{
 td{
   border-bottom: 1px solid gray;  
   height: 6rem;
+  vertical-align: middle;
 }
 tbody tr:hover{
   background-color: #1F1F1F;
@@ -101,15 +96,90 @@ tbody tr:hover{
   
   }
   .pagination a{
-   
     padding: 15px;
   
   }
   .page-link {
-
     cursor: pointer;
   }
   
 
 
   
+  @media only screen and (max-width: 768px){
+    .table-section{
+      margin-bottom: 3rem;
+    
+    }
+    tr{
+      text-align: justify;
+    }
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+    }
+    
+    th{
+      border-bottom: 1px solid gray;
+      border-top: 1px solid gray; 
+      height: 6rem;
+    }
+    td{
+      border-bottom: 1px solid gray;  
+      height: 6rem;
+      padding-top: 3rem;
+      vertical-align: middle;
+    }
+    tbody tr:hover{
+      background-color: #1F1F1F;
+    }
+   
+    thead{
+      display: none;
+    }
+
+    tbody, td, tr{
+      display: block;
+      width: 100%;
+    }
+    tr{
+      border: 1px solid gold;
+      margin-bottom: 1.5rem;
+    }
+    td .product-img{
+      padding-right: 100%;
+      /* right: 0;
+      left: 0; */
+    }
+    tbody tr td{
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+      padding-right: 2rem;
+  
+      
+    }
+    td:before{
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      text-align: left;
+      padding-left: 2rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    .input-tag input {  
+      background-color: #14161a;
+      color: #fff;
+      margin-top: 2rem;
+      width: 70%;
+      height: 3.5rem;
+      border: 1px solid snow;
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  }
