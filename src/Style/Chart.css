@@ -1,3 +1,38 @@
+#main-container{
+  display: flex;
+  flex-direction: row;
+  }
+  
+  .sidebar{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      border-right: 2px solid gray;
+      padding-right: 5rem;
+      align-items: center;
+      margin-left: 2.5rem;
+      font-size: 1.5rem;
+  }
+  
+  .coin-name{
+      font-size: 2.5rem;
+  }
+  
+  .desc-coin{
+      text-align: justify;
+      margin: 2rem 0;
+  }
+  .rank{
+      align-self: start;
+  }
+  .current-prize{
+      align-self: start;
+  }
+  .market-cap{
+      align-self: start;
+  }
+
 .chart{
     width: 60%;
     display: flex;
@@ -28,7 +63,74 @@ font-size: 2rem;
     color: black;
   }
 
-/* .change-btn button{
-    background-color: blue;
-    color: white;
-} */
+
+  /* tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .sidebar{
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 3rem;
+      border-right: none;
+      border-bottom: 2px solid gray;
+      font-size: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+  }
+
+  .chart{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+}
+
+  /* mobile screen */
+  @media only screen and (max-width: 767px){
+  body{
+      background-color: rgb(34, 19, 245);
+  }
+
+
+  #main-container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .sidebar{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid gray;
+      border-right: none;
+      margin: 0 auto;
+  }
+
+  .chart{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+}

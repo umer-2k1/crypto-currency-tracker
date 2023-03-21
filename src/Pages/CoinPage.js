@@ -5,7 +5,7 @@ import {SingleCoin} from '../Config/coinApi'
 import Chart from '../Components/Chart'
 import { useParams } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
- import '../Style/CoinPage.css'
+ import '../Style/Chart.css'
 
 const CoinPage = () => {
   const { id } = useParams();

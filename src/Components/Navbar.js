@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <a className='logo'>CryptoVerse</a>
+        <a className='logo'>CryptoCity</a>
         <select value={currency} onChange={(e)=> setCurrency(e.target.value)}>
           <option value={"USD"}>USD</option>
           <option value={"PKR"}>PKR</option>

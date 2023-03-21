@@ -23,7 +23,7 @@ const Banner = () => {
         <div style={{display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',}} className="container">
-    <h1 className='heading-txt'>CryptoVerse</h1>
+    <h1 className='heading-txt'>CryptoCity</h1>
     <p className='info' >Get all the Info regarding your Favourite Crypto Currency</p>
 
         </div>
