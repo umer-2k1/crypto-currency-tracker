@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { CryptoState } from '../Context/CryptoContext'
 import {CoinList} from '../Config/coinApi'
@@ -18,14 +18,16 @@ const itemPerPage = 15
 let count = 0
 
 
-const fetchCoinList = async()=>{
-  const {data} = await axios.get(CoinList(currency))
-  setCoinList(data)
-  setTotalPages(data.length)
-}
+
 useEffect (()=>{
+  const fetchCoinList = async()=>{
+    const {data} = await axios.get(CoinList(currency))
+    setCoinList(data)
+    setTotalPages(data.length)
+  }
+
   fetchCoinList()
-},[currency]);
+},[currency, coinlist, search, page]);
 
 const paginationHandler = ({selected}) =>{
   console.log(selected+1)
@@ -62,13 +64,14 @@ function commas(num){
     <tbody>
 
     {coinlist.filter((elem)=>{
-if (search =="") {
+if (search ==="") {
 return elem
 }
 else if (elem.name.toLowerCase().includes(search.toLowerCase())
 ||elem.symbol.toLowerCase().includes(search.toLowerCase())) {
 return elem
 }
+return null;
 }).slice((page-1)*itemPerPage, (page-1)*itemPerPage+itemPerPage).map((elem,index)=>{
 
 
