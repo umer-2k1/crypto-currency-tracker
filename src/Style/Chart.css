@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: row;
   }
-  
+  body{
+    overflow-x: hidden;
+  }
   .sidebar{
       width: 30%;
       display: flex;
@@ -43,6 +45,7 @@
 }
 .change-btn{
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
 width: 100%;
 margin-top: 2rem;
@@ -84,53 +87,92 @@ font-size: 2rem;
       justify-content: center;
       align-items: center;
       padding-bottom: 2rem;
-      margin: 0 auto;
-      margin-bottom: 5rem;
-  }
-
+      margin: 5rem auto;
+    }
+    
   .chart{
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0 auto;
-}
+  }
 
+  .change-btn{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    }
+    .change-btn a{
+       border: 1px solid gold;
+       padding: 1rem 1.8rem;
+       cursor: pointer;
+       color: #fff;
+       width: 20%;
+       text-align: center;
+       font-weight: 500;
+       border-radius: 0.5rem;
+     }
+  
 }
 
   /* mobile screen */
   @media only screen and (max-width: 767px){
-  body{
-      background-color: rgb(34, 19, 245);
-  }
 
+    
 
-  #main-container{
-    display: flex;
+    #main-container{
+      display: flex;
     flex-direction: column;
     }
-
+    
     .sidebar{
       width: 80%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       margin-top: 3rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       justify-content: center;
       align-items: center;
       border-bottom: 2px solid gray;
       border-right: none;
-      margin: 0 auto;
+      margin: 3rem auto;
   }
-
+  h2{
+    font-size: 1.5rem;
+  }
+  
   .chart{
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: 0 auto;
 }
+.coin-img img{
+  width: 100%;
+  height: 30vh;
+}
+
+.change-btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.change-btn a{
+
+    flex-basis: 40%;
+     border: 1px solid gold;
+     padding: 1rem 1rem;
+     color: #fff;
+     font-weight: 500;
+     border-radius: 0.5rem;
+     margin-bottom: 2rem;
+   }
 
 }
