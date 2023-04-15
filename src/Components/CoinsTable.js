@@ -4,9 +4,10 @@ import { CryptoState } from '../Context/CryptoContext'
 import {CoinList} from '../Config/coinApi'
 import '../Style/CoinsTable.css'
 import ReactPaginate from 'react-paginate';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 const CoinsTable = () => {
+  const navigate = useNavigate()
 const {currency, symbol} = CryptoState()
 const[coinlist, setCoinList] = useState([])
 const[search, setSearch] = useState("")
@@ -80,7 +81,7 @@ count++
 
 
 return <>
-<tr key={index}>
+<tr onClick={()=> navigate(`/coins/${elem.id}`)} key={index}>
         {/* <td>{key+1}</td> */}
         <td data-label="#" >{count}</td>
 <td data-label="Coins" className='product-img' >
