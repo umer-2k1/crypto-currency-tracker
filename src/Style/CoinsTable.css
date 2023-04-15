@@ -59,6 +59,10 @@ td{
   height: 6rem;
   vertical-align: middle;
 }
+tbody tr{
+  cursor: pointer;
+}
+
 tbody tr:hover{
   background-color: #1F1F1F;
 }
