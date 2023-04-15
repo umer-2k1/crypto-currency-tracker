@@ -87,11 +87,11 @@ return <>
 <td data-label="Coins" className='product-img' >
 <img src={elem.image}  alt="" />
 
-<Link to={`/coins/${elem.id}`}>
+{/* <Link to={`/coins/${elem.id}`}> */}
 <h6 id='coin-name'>{elem.name}
 <sup style={{paddingLeft:"1rem" ,color: "#929D82",textTransform: "uppercase"}}> {elem.symbol}</sup>
 </h6>
-</Link>
+{/* </Link> */}
 
 
 </td>
